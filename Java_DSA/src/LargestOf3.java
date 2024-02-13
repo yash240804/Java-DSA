@@ -7,7 +7,13 @@ public class LargestOf3 {
         int a = in.nextInt();
         int b = in.nextInt();
         int c = in.nextInt();
-        if (a>b &)
-
+        int max = a;
+        if (b > max){
+            max = b;
+        }
+        if (c > max){
+           max = c;
+        }
+        System.out.println(max);
     }
 }
