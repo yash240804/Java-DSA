@@ -1,18 +1,17 @@
 import java.util.Scanner;
 
-public class Fibo {
+public class FiboSeries {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        System.out.println("Enter no. of element you want in fib series : ");
+        int n = in.nextInt();
         int a = 0;
         int b = 1;
-        int count = 2;
-        int n = in.nextInt();
-        while (n >= count){
+        for (int i = 0; i < n; i++) {
+            System.out.println(a);
             int temp = b;
             b = b + a;
             a = temp;
-            count++;
         }
-        System.out.println(a);
     }
 }
